@@ -8,8 +8,8 @@ It is a simple app written in Java using Android Studio with self-made graphics.
 
 Todo
 
-[]Saving state of a game to local files
-[]Animations
-[]Background
-[]Icons 
-[]Change progress bars
+[]Saving state of a game to local files  
+[]Animations  
+[]Background  
+[]Icons   
+[]Change progress bars  
