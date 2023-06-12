@@ -83,15 +83,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick (View view){
                 if (satiety == 100) {
-//                    Toast.makeText(getApplicationContext(), "Im already full!", Toast.LENGTH_SHORT).show();
                     text.setText("Im already full!");
                 } else if (satiety < 81) {
-                    // Toast.makeText(getApplicationContext(), "Mmmmmmm", Toast.LENGTH_SHORT).show();
                     text.setText("Mmmmmmm");
                     satiety += 20;
                     progressBar.setProgress(satiety);
                 } else {
-                    //Toast.makeText(getApplicationContext(), "Im already full!", Toast.LENGTH_SHORT).show();
                     text.setText("Mmmmmmm");
                     satiety = 100;
                     progressBar.setProgress(satiety);
@@ -102,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //zabawa
+        //playing with the cat
 
         Button button5 = (Button) findViewById(R.id.button5);
 
@@ -113,12 +110,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick (View view){
                 if (fun == 100) {
-//                    Toast.makeText(getApplicationContext(), "Im already full!", Toast.LENGTH_SHORT).show();
                     text.setText(Integer.toString(fun));
                     text.setText("I dont want to play anymore!");
 
                 } else if (fun < 81) {
-                    // Toast.makeText(getApplicationContext(), "Mmmmmmm", Toast.LENGTH_SHORT).show();
                     text.setText(Integer.toString(fun));
                     text.setText("Meow");
                     fun += 20;
@@ -126,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
                     progressBar2.setProgress(fun);
                     progressBar4.setProgress(energylvl);
                 } else {
-                    //Toast.makeText(getApplicationContext(), "Im already full!", Toast.LENGTH_SHORT).show();
                     text.setText(Integer.toString(fun));
                     text.setText("Meow");
                     fun = 100;
@@ -138,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //mycie
+        //showering
 
         Button button6 = (Button) findViewById(R.id.button6);
 
@@ -149,18 +143,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick (View view){
                 if (cleanliness == 100) {
-//                    Toast.makeText(getApplicationContext(), "Im already full!", Toast.LENGTH_SHORT).show();
                     text.setText(Integer.toString(fun));
                     text.setText("I'm already clean!");
 
                 } else if (cleanliness < 81) {
-                    // Toast.makeText(getApplicationContext(), "Mmmmmmm", Toast.LENGTH_SHORT).show();
                     text.setText(Integer.toString(fun));
                     text.setText("Meow");
                     cleanliness += 20;
                     progressBar3.setProgress(cleanliness);
                 } else {
-                    //Toast.makeText(getApplicationContext(), "Im already full!", Toast.LENGTH_SHORT).show();
                     text.setText(Integer.toString(fun));
                     text.setText("Meow");
                     cleanliness = 100;
@@ -170,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //spanie
+        //putting the cat to sleep
 
         Button button7 = (Button) findViewById(R.id.button7);
 
@@ -181,12 +172,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick (View view){
                 if (energylvl == 100) {
-//                    Toast.makeText(getApplicationContext(), "Im already full!", Toast.LENGTH_SHORT).show();
                     text.setText(Integer.toString(fun));
                     text.setText("I don't want to sleep anymore");
 
                 } else if (energylvl < 100) {
-                    // Toast.makeText(getApplicationContext(), "Mmmmmmm", Toast.LENGTH_SHORT).show();
                     text.setText(Integer.toString(fun));
                     text.setText("Zzzzzz...");
                     try {
@@ -213,24 +202,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-//        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-//
-//        binding.toolbar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
-    }
+   }
 
-    //zabawa
-
-    //mycie
-
-    //spanie
+   
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -254,33 +228,12 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-//    @Override
-//    public boolean onSupportNavigateUp() {
-//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-//        return NavigationUI.navigateUp(navController, appBarConfiguration)
-//                || super.onSupportNavigateUp();
-//    }
 
-    int satiety = 100; //sytosc
-    int energylvl = 100; //poziom energii
-    int cleanliness = 100; //poziom czytosci (?)
-    int fun = 100; //poziom zabawy/dobrego samopoczucia
+    int satiety = 100; 
+    int energylvl = 100; 
+    int cleanliness = 100; 
+    int fun = 100; //level of cat's wellbeing 
 
-
-
-    //domyslnie wszystkie na 100=max
-
-    //karmienie
-
-
-
-    //koniec karmienia
-
-    //zabawa
-
-    //mycie
-
-    //spanie
 
 
 }
